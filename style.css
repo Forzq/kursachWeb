@@ -1,19 +1,104 @@
 body{
     margin: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 header{
+    display: flex;
     width: 53.23%;
     height: 68.2px;
     margin-top: 14px;
     background-color: bisque;
-    
+    font-family: Montserrat;
 }
 .logo{
     width: 19.4%;
     height: 92.6%;
     background-color: antiquewhite;
+    display: flex;
+}
+.imgLogo{
+    width: 48px;
+    height: 57%;
+}
+.logoText{
+margin-left: 10px;
+display: flex;
+flex-direction: column;
+width: 140px;
+}
+.logoTextBlue{
+    width: 140px;
+    color: #43AAFF;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.logoTextUnder{
+margin-top: 0;
+color: #959A9D;
+font-size: 10px;
+}
+.headerMenu{
+    display: flex;
+    flex-direction: row;
+    margin-left: 148.7px;
+}
+.headerNumber{
+    display: flex;
+    flex-direction: column;
+    width: 148.7px;
+}
+.headerNumberUpper{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+.headerNumberUnder{
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 0;
+    color: #959A9D;
+}
+.headerCommun{
+    height: 35px;
+    color: #4B5258;
+    width: 225px;
+    margin-left: 53px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+}
+.headerCommunText{
+    width: 140px;
+    text-align: right;
+}
+.headerIcons{
+    gap: 10px;
+    margin-top: 10px;
+}
+.headerCons{
+    margin-left: 49px;
+    width: 199px;
+    height: 55px;
+    border-radius: 40px;
+    border: 1px solid #43AAFF;
+    margin-top: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame1{
+    margin-top: 10%;
+}
+.frame1Text{
+    width: 564px;
+    height: 135px;
+}
+.frame1TextTire{
+    color: #43AAFF;
 }
