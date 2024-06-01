@@ -13,6 +13,7 @@ header{
     background-color: bisque;
 }
 .logo{
+    margin-left: 0.4%;
     width: 19.4%;
     height: 92.6%;
     background-color: antiquewhite;
@@ -27,6 +28,7 @@ margin-left: 10px;
 display: flex;
 flex-direction: column;
 width: 140px;
+line-height: 105%;
 }
 .logoTextBlue{
     width: 140px;
@@ -49,6 +51,8 @@ font-size: 10px;
     display: flex;
     flex-direction: column;
     width: 148.7px;
+    line-height: 110%;
+    margin-top: 0.6%;
 }
 .headerNumberUpper{
     font-size: 17px;
@@ -65,11 +69,11 @@ font-size: 10px;
     height: 35px;
     color: #4B5258;
     width: 225px;
-    margin-left: 53px;
+    margin-left: 55px;
     font-size: 12px;
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 16px;
     margin-top: 10px;
 }
 .headerCommunText{
@@ -79,6 +83,9 @@ font-size: 10px;
 .headerIcons{
     gap: 10px;
     margin-top: 10px;
+}
+.headerIcons img{
+    height: 121%;
 }
 .headerCons{
     margin-left: 49px;
@@ -322,6 +329,7 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     margin-top: 4%;
+    font-size: 22px;
 }
 .frame3TextP{
     font-size: 29px;
@@ -834,6 +842,7 @@ footer{
     background-color: bisque;
 }
 .logoFooter{
+    padding-left: 0.35%;
     width: 100%;
     height: 100%;
     background-color: antiquewhite;
@@ -841,17 +850,19 @@ footer{
     
 }
 .footerIcons{
-    gap:10px;
+    gap: 200px;
+    margin-left: -3%;
 }
 .footerMenu{
     display: flex;
-    margin-left: 10px;
+    margin-left: 2%;
+    margin-top: 1%;
     white-space: nowrap;
     font-size: 12px;
     display: flex;
     align-items: center; /* Выравниваем по вертикали */
     justify-content: space-between; 
-    gap: 6%;
+    gap: 7%;
 }
 
 .headerIcons{
