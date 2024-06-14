@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/privacy-style.css">
+</head>
+<body>
+    <header >
+        <div class="header__container">
+          <a href="#" class="header__logo logo"> 
+            <div onclick="window.location.href='index.html'" class="logo__img-wrapper">
+              <img src="./img/common/logo.svg" alt="logo" class="logo__img">
+            </div>
+            <div onclick="window.location.href='index.html'" class="logo__text">
+              <div class="logo__title">Soft Clean</div>
+              <div class="logo__subtitle" id="softCleanLogo">Бережная уборка помещений СПБ</div>
+            </div>
+          <div class="header__phone-block-wrapper">
+            <div class="header__phone-block">
+              <a href="tel:+78007006050" class="header__phone">8-800-700-60-50</a>
+              <div class="header__working-hours" id="Mon-Sun">
+                Пн-Вс: 9:00 - 21:00
+              </div>
+            </div>
+          </div>
+          <div class="header__messengers">
+            <div class="header__messengers-text" id="header__messengers-text">
+              Быстрая связь с нами в мессенджерах:
+            </div>
+            <div class="header__messengers-links">
+              <a href="#" class="header__messenger-link">
+                <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="header__messenger-icon">
+              </a>
+              <a href="#" class="header__messenger-link">
+                <img src="./img/common/whatsup-icon.svg" alt="whatsup icon" class="header__messenger-icon">
+              </a>
+            </div>
+          </div>
+          <button id="themebutton" onclick="toggleTheme()">theme</button>
+          <button id="langbutton" onclick="toggleLanguage()">ru</button>
+          <button class="header__button button" id="header__button button">Заказать консультацию</button>
+        </div>
+      </header>
+      <main>
+        <div class="privacy">
+            <h1>Политика конфиденциальности Soft Clean</h1>
+            <h3>Дата последнего обновления: [13.06.2024]</h3>
+            <h2>Введение</h2>
+            <p>Soft Clean ценят вашу конфиденциальность и стремятся защитить ваши личные данные.<br> Эта Политика конфиденциальности описывает, как мы собираем, используем, раскрываем, храним и защищаем информацию, которую вы предоставляете нам при использовании нашего сайта Soft Clean.</p>
+            <h2>Информация, которую мы собираем</h2>
+            <p>Мы собираем информацию, которую вы предоставляете нам добровольно, например: <br>
+                <b>Личные данные:</b> Имя, фамилия, адрес электронной почты, номер телефона, адрес, дата рождения.
+                Информация о заказе:<br> <b>Информация о заказах на уборку</b>, включая тип уборки, адрес, дату и время уборки, контактные данные.
+                <br><b>Информация об оплате:</b> Информация о платежах, включая номер карты, имя держателя карты, срок действия карты, CVV-код.
+                <br><b>Отзывы и обратная связь:</b> Отзывы о наших услугах, предложения, вопросы.</p>
+                <h2>Мы также можем собирать информацию автоматически, например:</h2>
+                <p>
+                   <b> Информация о вашем устройстве: </b>Тип устройства, операционная система, IP-адрес, браузер.<br>
+                    <b>Информация о вашем использовании сайта:</b> Страницы, которые вы посещаете, ссылки, по которым вы переходите, время, проведенное на сайте.</p>
+            <h2>Как мы используем вашу информацию</h2>
+            <p>Мы используем вашу информацию для следующих целей:</p>
+            <p>
+                Предоставление услуг: Обработка заказов на уборку, планирование уборки, общение с клиентами.<br>
+Улучшение сайта: Анализ использования сайта, улучшение функциональности, разработка новых функций.<br>
+Маркетинг и реклама: Отправка рекламных материалов, новостей и специальных предложений.<br>
+Предоставление поддержки: Ответ на вопросы, решение проблем.<br>
+Защита от мошенничества: Проверка и предотвращение мошеннических действий.
+            </p>
+            <h2>Раскрытие информации</h2>
+            <p>Мы можем раскрывать вашу информацию в следующих случаях:</p>
+            <p>Поставщикам услуг: Мы можем передавать вашу информацию нашим поставщикам услуг, которые помогают нам предоставлять услуги,<br> например, платежные системы, службы доставки, маркетинговые платформы.<br>
+                Правовым органам: Мы можем раскрывать вашу информацию правоохранительным органам,<br> если это требуется по закону или для защиты наших прав.<br>
+                Слияние или поглощение: В случае слияния или поглощения, ваша информация может быть передана новому владельцу.</p>
+            <h2>Безопасность информации</h2>
+            <p>Мы используем разумные меры безопасности для защиты вашей информации<br> от несанкционированного доступа, использования, раскрытия, изменения или уничтожения.<br>
+                Однако, ни один сайт или система передачи данных не является полностью безопасным.</p>
+
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <a href="#" class="footer__logo logo">
+            <div class="logo__img-wrapper">
+              <img src="./img/common/logo.svg" alt="logo" class="logo__img">
+            </div>
+            <div class="logo__text">
+              <div class="logo__title">Soft Clean</div>
+              <div class="logo__subtitle" id="softCleanLogo1">Бережная уборка помещений СПБ </div>
+            </div>
+          </a>
+          <ul class="footer__menu">
+            <li class="footer__item">
+              <a href="#" class="footer__link" id="requisites">
+                Реквизиты
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link" id="privacy">
+                Политика конфиденциальности
+              </a>
+            </li>
+            <li class="footer__item">
+              <div class="footer__messengers-block">
+                <div class="footer__messengers-text" id="footer__messengers-text">
+                  Быстрая связь:
+                </div>
+                <div class="footer__messenger-links">
+                  <a href="#" class="footer__messenger-link">
+                    <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="footer__messenger-icon">
+                  </a>
+                  <a href="#" class="footer__messenger-link">
+                    <img src="./img/common/whatsup-icon.svg" alt="whatsup icon" class="footer__messenger-icon">
+                  </a>
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </footer>
+      <script src="/script.js"></script>
+</body>
+</html>

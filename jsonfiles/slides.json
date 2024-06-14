@@ -1,0 +1,19 @@
+{
+    "slides":[
+        {
+            "imgpath":"img/certificates/certificate-1.jpg"
+        },
+        {
+            "imgpath":"img/certificates/certificate-2.jpg"
+        },
+        {
+            "imgpath":"img/certificates/certificate-3.jpg"
+        },
+        {
+            "imgpath":"img/certificates/certificate-4.jpg"
+        },
+        {
+            "imgpath":"img/certificates/certificate-5.jpg"
+        }
+    ]
+}

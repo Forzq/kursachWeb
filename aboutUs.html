@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/aboutUs-style.css">
+</head>
+<body>
+    <header >
+        <div class="header__container">
+          <a href="#" class="header__logo logo">
+            <div class="logo__img-wrapper">
+              <img src="./img/common/logo.svg" alt="logo" class="logo__img">
+            </div>
+            <div class="logo__text">
+              <div class="logo__title">Soft Clean</div>
+              <div class="logo__subtitle" id="softCleanLogo">Бережная уборка помещений СПБ</div>
+            </div>
+          <div class="header__phone-block-wrapper">
+            <div class="header__phone-block">
+              <a href="tel:+78007006050" class="header__phone">8-800-700-60-50</a>
+              <div class="header__working-hours" id="Mon-Sun">
+                Пн-Вс: 9:00 - 21:00
+              </div>
+            </div>
+          </div>
+          <div class="header__messengers">
+            <div class="header__messengers-text" id="header__messengers-text">
+              Быстрая связь с нами в мессенджерах:
+            </div>
+            <div class="header__messengers-links">
+              <a href="#" class="header__messenger-link">
+                <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="header__messenger-icon">
+              </a>
+              <a href="#" class="header__messenger-link">
+                <img src="./img/common/whatsup-icon.svg" alt="whatsup icon" class="header__messenger-icon">
+              </a>
+            </div>
+          </div>
+          <button id="themebutton" onclick="toggleTheme()">theme</button>
+          <button id="langbutton" onclick="toggleLanguage()">ru</button>
+          <button class="header__button button" id="header__button button">Заказать консультацию</button>
+        </div>
+      </header>
+      <main>
+        <section class="about">
+            <div class="container">
+                <h2>О нас</h2>
+                <p>
+                    Soft Clean - это команда профессиональных уборщиков, которые специализируются на предоставлении качественных клининговых услуг на выезд в Санкт-Петербурге. 
+                    Мы работаем с 2015 года и за это время успели завоевать доверие многих клиентов. 
+                    Наша миссия - сделать ваш дом или офис чистым и уютным, чтобы вы могли наслаждаться комфортом и уютом без необходимости тратить время и силы на уборку.
+                </p>
+
+                <h3>Наши ценности:</h3>
+                <ul>
+                    <li><strong>Качество:</strong> Мы стремимся предоставлять услуги высочайшего качества, используя только профессиональные моющие средства и оборудование.</li>
+                    <li><strong>Надежность:</strong> Мы всегда пунктуальны, ответственны и выполняем работу в срок. Вы можете быть уверены, что мы всегда придем на помощь, когда вам нужна уборка.</li>
+                    <li><strong>Доверие:</strong> Мы ценим доверие наших клиентов и всегда стараемся оправдать их ожидания.</li>
+                    <li><strong>Индивидуальный подход:</strong> Мы понимаем, что каждый клиент уникален, поэтому предлагаем индивидуальный подход к каждому заказу.</li>
+                    <li><strong>Профессионализм:</strong> Наша команда состоит из опытных и квалифицированных специалистов, которые проходят регулярное обучение и имеют все необходимые навыки для выполнения качественной уборки.</li>
+                </ul>
+
+                <h3>Наши услуги:</h3>
+                <div class="service-grid">
+                    <div class="service">
+                        <h4>Ежедневная уборка</h4>
+                        <p>Поддержание чистоты в вашем доме или офисе на ежедневной основе.</p>
+                    </div>
+                    <div class="service">
+                        <h4>Генеральная уборка</h4>
+                        <p>Тщательная уборка всех помещений, включая удаление пыли, грязи, пятен и т.д.</p>
+                    </div>
+                    <div class="service">
+                        <h4>Послестроительная уборка</h4>
+                        <p>Уборка помещений после ремонта или строительства, включая удаление строительного мусора и пыли.</p>
+                    </div>
+                    <div class="service">
+                        <h4>Уборка квартир</h4>
+                        <p>Комплексная уборка жилых помещений, включая уборку кухни, ванной комнаты, спальни и т.д.</p>
+                    </div>
+                    <div class="service">
+                        <h4>Уборка офисов</h4>
+                        <p>Уборка офисных помещений, включая уборку столов, стульев, полов, окон и т.д.</p>
+                    </div>
+                    <div class="service">
+                        <h4>Уборка коттеджей</h4>
+                        <p>Уборка коттеджей, включая уборку всех этажей, балконов, террас и т.д.</p>
+                    </div>
+                </div>
+
+                <h3>Почему стоит выбрать нас:</h3>
+                <ul>
+                    <li><strong>Опыт и профессионализм:</strong> Мы работаем в сфере клининговых услуг уже [Количество лет] лет и обладаем богатым опытом.</li>
+                    <li><strong>Индивидуальный подход:</strong> Мы учитываем все ваши пожелания и предлагаем оптимальное решение для вашей ситуации.</li>
+                    <li><strong>Доступные цены:</strong> Мы предлагаем конкурентные цены на наши услуги.</li>
+                    <li><strong>Гарантия качества:</strong> Мы гарантируем высокое качество наших услуг и предоставляем гарантию на все виды работ.</li>
+                    <li><strong>Экологически чистые средства:</strong> Мы используем только экологически чистые моющие средства, которые безопасны для вас, вашей семьи и домашних животных.</li>
+                </ul>
+
+                <h3>Отзывы клиентов:</h3>
+                <div class="reviews">
+                    <div class="review">
+                        <p>"Soft Clean - это настоящая находка! Я очень довольна качеством уборки и профессионализмом сотрудников. Теперь у меня всегда чисто и уютно, а я могу посвятить время более приятным делам."</p>
+                        <p>- Алеся</p>
+                    </div>
+                    <div class="review">
+                        <p>"Soft Clean - это идеальное решение для тех, кто ценит чистоту и комфорт. Я пользуюсь их услугами уже несколько лет и всегда остаюсь доволен. Рекомендую всем!"</p>
+                        <p>- Андрей</p>
+                    </div>
+                </div>
+
+                <p>
+                    Свяжитесь с нами, чтобы получить бесплатную консультацию и заказать уборку.
+                </p>
+            </div>
+        </section>
+    </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <a href="#" class="footer__logo logo">
+            <div class="logo__img-wrapper">
+              <img src="./img/common/logo.svg" alt="logo" class="logo__img">
+            </div>
+            <div class="logo__text">
+              <div class="logo__title">Soft Clean</div>
+              <div class="logo__subtitle" id="softCleanLogo1">Бережная уборка помещений СПБ </div>
+            </div>
+          </a>
+          <ul class="footer__menu">
+            <li class="footer__item">
+              <a href="#" class="footer__link" id="requisites">
+                Реквизиты
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link" id="privacy">
+                Политика конфиденциальности
+              </a>
+            </li>
+            <li class="footer__item">
+              <div class="footer__messengers-block">
+                <div class="footer__messengers-text" id="footer__messengers-text">
+                  Быстрая связь:
+                </div>
+                <div class="footer__messenger-links">
+                  <a href="#" class="footer__messenger-link">
+                    <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="footer__messenger-icon">
+                  </a>
+                  <a href="#" class="footer__messenger-link">
+                    <img src="./img/common/whatsup-icon.svg" alt="whatsup icon" class="footer__messenger-icon">
+                  </a>
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </footer>
+      <script src="/script.js"></script>
+</body>
+</html>
