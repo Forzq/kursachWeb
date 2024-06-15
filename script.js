@@ -301,3 +301,8 @@ resetbut.addEventListener("click",function(){
   location. reload() 
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const knopochka_burger = document.querySelector(".header__burger-menu");
+  document.getElementById("burgerID").addEventListener("click", function() {
+    knopochka_burger.classList.toggle("open") });
+});
