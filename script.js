@@ -27,7 +27,7 @@ var translations = {};
 
 // Загрузка JSON файла с переводами
 function loadTranslations() {
-  return fetch('/jsonfiles/translation.json')
+  return fetch('jsonfiles/translation.json')
     .then(response => response.json())
     .then(data => {
       translations = data;
@@ -178,20 +178,6 @@ fetch('jsonfiles/slides.json')
     updatePagination();
   });
   //logs
-  fetch("jsonfiles/logs.json")
-    .then(response => response.json())
-    .then(data => {
-        // Проверяем, есть ли уже данные в localStorage
-        registeredUsers = JSON.parse(localStorage.getItem("registeredUsers")) || [];
-        // Если данных нет, добавляем их из JSON файла
-        if (registeredUsers.length === 0) {
-            registeredUsers = data;
-            // Сохраняем данные в localStorage
-            localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
-            console.log("User data added from JSON file to localStorage:", data);
-        }
-    })
-    .catch(error => console.error("Error loading JSON file:", error));
     //modale window
     var transparent=document.getElementById("transparent");
 var Main_1_button=document.getElementById("header__button button");
@@ -207,10 +193,111 @@ closebutton.addEventListener("click", function() {
 });
 var usernameDisplay = document.getElementById("account");
 const loggedInUser = JSON.parse(sessionStorage.getItem('loggedInUser'));
-var butText=document.getElementById('butText');
+var butText=document.getElementById('header__button button');
+var butText1=document.getElementById('header__button1 button');
+var woman_img=document.getElementById('intro__img-bg');
+var sticker_div_1=document.getElementById('intro__sticker');
+var calculator=document.getElementById('calculator');
+var leave_request=document.getElementById('leave-request');
+var our_inventory=document.getElementById('our-inventory');
+var show_users=document.getElementById('show_users');
+var fourth_cleaning_free=document.getElementById('fourth-cleaning-free');
+var gifts__container=document.getElementById('gifts__container');
+var intro__buttons=document.getElementById('intro__buttons');
+var questions_but=document.getElementById("questions");
+var privacy_li=document.getElementById("privacy_li");
+var extra_services__container =document.getElementById('extra-services__container');
+var order_cleaning__container=document.getElementById('order-cleaning__wrapper');
+var instant_calculation__container=document.getElementById('instant-calculation__container');
+var aboutUs=document.getElementById('aboutUs');
 document.addEventListener("DOMContentLoaded", function(){
   if(loggedInUser){
     usernameDisplay.textContent = loggedInUser.nickname;
-    butText.textContent='23';
+    butText.classList.add("log");
+    butText1.classList.add("log");
+  }
+  if(loggedInUser&&loggedInUser.role==="admin"){
+    woman_img.classList.add('admin');
+    sticker_div_1.classList.add('admin');
+    calculator.classList.add('admin');
+    leave_request.classList.add('admin');
+    instant_calculation__container.classList.add('admin');
+    our_inventory.classList.add('admin');
+    order_cleaning__container.classList.add('admin');
+    show_users.classList.add('admin');
+  }
+  else{
+    woman_img.classList.remove('admin');
+    sticker_div_1.classList.remove('admin');
+    calculator.classList.remove('admin');
+    leave_request.classList.remove('admin');
+    instant_calculation__container.classList.remove('admin');
+    our_inventory.classList.remove('admin');
+    order_cleaning__container.classList.remove('admin');
+    show_users.classList.remove('admin');
+  }
+  if(!loggedInUser){
+    extra_services__container.classList.add('nolog');
+    fourth_cleaning_free.classList.add('nolog');
+    gifts__container.classList.add('nolog');
+    intro__buttons.classList.add('nolog');
+    questions_but.innerHTML=`
+       <a href="regauto.html" class="footer__link" id="requisites">
+          Вопросы
+        </a>
+        `;
+    privacy_li.innerHTML=`
+       <a href="regauto.html" class="footer__link" id="privacy">
+          Политика конфиденциальности
+        </a>
+        `;
+  }
+  else{
+    extra_services__container.classList.remove('nolog');
+    fourth_cleaning_free.classList.remove('nolog');
+    gifts__container.classList.remove('nolog');
+    intro__buttons.classList.remove('nolog');
+  }
+  if(loggedInUser&&loggedInUser.role==='user'){
+    aboutUs.classList.add('loggedUser')
+  }else{
+    aboutUs.classList.remove('loggedUser');
   }
 });
+butText1.addEventListener("click", function() {
+  usernameDisplay.textContent = "";
+  sessionStorage.removeItem("loggedInUser");
+  sessionStorage.removeItem("Acc_Name");
+  butText.classList.remove("log");
+    butText1.classList.remove("log");
+    woman_img.classList.remove('admin');
+    sticker_div_1.classList.remove('admin');
+    calculator.classList.remove('admin');
+    leave_request.classList.remove('admin');
+    instant_calculation__container.classList.remove('admin');
+    our_inventory.classList.remove('admin');
+    order_cleaning__container.classList.remove('admin');
+    show_users.classList.remove('admin');
+    extra_services__container.classList.add('nolog');
+    fourth_cleaning_free.classList.add('nolog');
+    gifts__container.classList.add('nolog');
+    intro__buttons.classList.add('nolog');
+    questions_but.innerHTML=`
+       <a href="regauto.html" class="footer__link" id="requisites">
+          Вопросы
+        </a>
+        `;
+    privacy_li.innerHTML=`
+       <a href="regauto.html" class="footer__link" id="privacy">
+          Политика конфиденциальности
+        </a>
+        `;
+        aboutUs.classList.remove('loggedUser');
+});
+var resetbut=document.getElementById('reset');
+resetbut.addEventListener("click",function(){
+  localStorage.removeItem("body-theme");
+  localStorage.removeItem("language");
+  location. reload() 
+});
+

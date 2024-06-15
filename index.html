@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Main page</title>
 </head>
 
@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="wrapper">
-    <header class="header">
+    <header>
   <div class="header__container">
     <a href="#" class="header__logo logo">
       <div class="logo__img-wrapper">
@@ -56,7 +56,8 @@
     <button id="themebutton" onclick="toggleTheme()">тема</button>
     <button id="langbutton" onclick="toggleLanguage()">рус</button>
     <p id="account"></p>
-    <button class="header__button button" id="header__button button"><p id="butText">Авторизация</p></button>
+    <button class="header__button button" id="header__button button">Авторизация</button>
+    <button class="header__button1 button" id="header__button1 button">Выйти</button>
   </div>
 </header>
     <main class="main">
@@ -71,12 +72,12 @@
           10%</span> на первый заказ
       </div>
     </div>
-    <div class="intro__buttons">
-      <a href="/prices.html" class="intro__button button button_large button_blue" id="button_large_button_blue">Рассчитать стоимость</a>
+    <div class="intro__buttons" id="intro__buttons">
+      <a href="prices.html" class="intro__button button button_large button_blue" id="button_large_button_blue">Рассчитать стоимость</a>
       <a href="#" class="intro__button button button_large button_orange" id="button_large_button_orange">Выбрать вид уборки</a>
     </div>
-    <img src="./img/intro/img-bg.png" alt="Девушка, моющая стол. Просто задний фон" class="intro__img-bg">
-    <div class="intro__sticker">
+    <img src="./img/intro/img-bg.png" alt="Девушка, моющая стол. Просто задний фон" class="intro__img-bg" id="intro__img-bg">
+    <div class="intro__sticker" id="intro__sticker">
       <div class="intro__sticker-text" id="intro__sticker-text">
         Убрано <span class="_blue">более 535</span> объектов
       </div>
@@ -152,7 +153,7 @@
     </ul>
   </div>
 </nav>
-      <section class="calculator">
+      <section class="calculator" id="calculator">
       <div class="calculator__container">
     <h2 class="calculator__heading heading2" id="calculator__heading heading2">
       <span class="_bold">Калькулятор стоимости уборки</span> с точностью до 98%
@@ -381,7 +382,7 @@
     </div>
   </div>
 </section>
-      <div class="leave-request">
+      <div class="leave-request" id="leave-request">
   <div class="leave-request__container">
     <form action="#" class="leave-request__form">
       <div class="leave-request__text" id="leave-request__text">
@@ -555,7 +556,7 @@
 
 
       <section class="extra-services">
-  <div class="extra-services__container">
+  <div class="extra-services__container" id="extra-services__container">
     <div class="extra-services__subtitle subtitle" id="extra-services__subtitle">Не нашли нужный вариант?</div>
     <h2 class="extra-services__heading heading2" id="extra-services__heading">
       Посмотрите дополнительные услуги
@@ -685,7 +686,7 @@
     </div>
   </div>
 </section>
-      <div class="fourth-cleaning-free">
+      <div class="fourth-cleaning-free" id="fourth-cleaning-free">
   <div class="fourth-cleaning-free__container">
     <div class="fourth-cleaning-free__block">
       <div class="fourth-cleaning-free__text" id="fourth-cleaning-free__text">
@@ -1049,7 +1050,7 @@
   </div>
 </section>
       <div class="instant-calculation">
-  <div class="instant-calculation__container">
+  <div class="instant-calculation__container" id="instant-calculation__container">
     <div class="instant-calculation__content">
       <h2 class="instant-calculation__heading heading2" id="instant-calculation__heading">
         Моментальный Рассчёт стоимости по фотографии
@@ -1105,7 +1106,7 @@
   <img src="./img/instant-calculate/top-shape.svg" alt="fd" class="instant-calculation__bg-top-shape">
   <img src="./img/instant-calculate/bottom-shape.svg" alt="asd" class="instant-calculation__bg-bottom-shape">
 </div>
-      <section class="our-inventory">
+      <section class="our-inventory" id="our-inventory">
   <div class="our-inventory__container">
     <h2 class="our-inventory__heading heading2" id="our-inventory__heading">
       Что входит в инвентарь нашего клинера
@@ -1172,7 +1173,7 @@
   </div>
 </section>
       <section class="gifts">
-  <div class="gifts__container">
+  <div class="gifts__container" id="gifts__container">
     <h2 class="gifts__heading heading2" id="gifts__heading heading2">
       <span class="_bold">Выберите подарок и закажите
         бережную уборку,</span> без наценок
@@ -1284,7 +1285,7 @@
 </section>
       <div class="order-cleaning">
   <div class="order-cleaning__container">
-    <div class="order-cleaning__wrapper">
+    <div class="order-cleaning__wrapper" id="order-cleaning__wrapper">
       <h2 class="order-cleaning__heading" id="order-cleaning__heading">
         <span class="_bold">Закажите уборку прямо сейчас!</span> Выезд персонала в течении часа
       </h2>
@@ -1392,16 +1393,22 @@
       </div>
     </a>
     <ul class="footer__menu">
-      <p onclick="window.location.href='users.html'">Вce пользователи</p>
-      <li class="footer__item">
-        <a href="/questions.html" class="footer__link" id="requisites">
-          Реквизиты
+      <p id="aboutUs" onclick="window.location.href='aboutUs.html'">О нас</p>
+      <p id="show_users" onclick="window.location.href='users.html'">Вce пользователи</p>
+      <li class="footer__item" id="questions">
+        <a href="questions.html" class="footer__link" id="requisites">
+          Вопросы
+        </a>
+      </li>
+      <li class="footer__item" id="privacy_li">
+        <a href="privacy.html" class="footer__link" id="privacy">
+          Политика конфиденциальности
         </a>
       </li>
       <li class="footer__item">
-        <a href="/privacy.html" class="footer__link" id="privacy">
-          Политика конфиденциальности
-        </a>
+        <p class="footer__link" id="reset">
+          Сбросить настройки
+        </p>
       </li>
       <li class="footer__item">
         <div class="footer__messengers-block">
@@ -1424,7 +1431,7 @@
 </footer>
   </div>
 
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

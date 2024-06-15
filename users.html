@@ -5,45 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header >
-        <div class="header__container">
-          <a href="#" class="header__logo logo"> 
-            <div onclick="window.location.href='index.html'" class="logo__img-wrapper">
-              <img src="./img/common/logo.svg" alt="logo" class="logo__img">
-            </div>
-            <div onclick="window.location.href='index.html'" class="logo__text">
-              <div class="logo__title">Soft Clean</div>
-              <div class="logo__subtitle" id="softCleanLogo">Бережная уборка помещений СПБ</div>
-            </div>
-          <div class="header__phone-block-wrapper">
-            <div class="header__phone-block">
-              <a href="tel:+78007006050" class="header__phone">8-800-700-60-50</a>
-              <div class="header__working-hours" id="Mon-Sun">
-                Пн-Вс: 9:00 - 21:00
-              </div>
-            </div>
-          </div>
-          <div class="header__messengers">
-            <div class="header__messengers-text" id="header__messengers-text">
-              Быстрая связь с нами в мессенджерах:
-            </div>
-            <div class="header__messengers-links">
-              <a href="#" class="header__messenger-link">
-                <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="header__messenger-icon">
-              </a>
-              <a href="#" class="header__messenger-link">
-                <img src="./img/common/whatsup-icon.svg" alt="whatsup icon" class="header__messenger-icon">
-              </a>
-            </div>
-          </div>
-          <button id="themebutton" onclick="toggleTheme()">theme</button>
-          <button id="langbutton" onclick="toggleLanguage()">ru</button>
-          <button class="header__button button" id="header__button button">Заказать консультацию</button>
+  <header>
+    <div class="header__container">
+      <a href="#" class="header__logo logo">
+        <div onclick="window.location.href='index.html'" class="logo__img-wrapper">
+          <img src="./img/common/logo.svg" alt="logo" class="logo__img">
         </div>
-      </header>
+        <div class="logo__text">
+          <div class="logo__title">Soft Clean</div>
+          <div class="logo__subtitle" id="softCleanLogo">Бережная уборка помещений СПБ</div>
+        </div>
+      <div class="header__phone-block-wrapper">
+        <div class="header__phone-block">
+          <a href="tel:+78007006050" class="header__phone">8-800-700-60-50</a>
+          <div class="header__working-hours" id="Mon-Sun">
+            Пн-Вс: 9:00 - 21:00
+          </div>
+        </div>
+      </div>
+      <div class="header__messengers">
+        <div class="header__messengers-text" id="header__messengers-text">
+          Быстрая связь с нами в мессенджерах:
+        </div>
+        <div class="header__messengers-links">
+          <a href="#" class="header__messenger-link">
+            <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="header__messenger-icon">
+          </a>
+          <a href="#" class="header__messenger-link">
+            <img src="./img/common/whatsup-icon.svg" alt="whatsup icon" class="header__messenger-icon">
+          </a>
+        </div>
+      </div>
+      <button id="themebutton" onclick="toggleTheme()">тема</button>
+      <button id="langbutton" onclick="toggleLanguage()">рус</button>
+      <p id="account"></p>
+      <button style="display: none;" class="header__button button" id="header__button button">Авторизация</button>
+    </div>
+  </header>
       <main>
        <div class="Users"></div>
       </main>
@@ -59,15 +60,21 @@
             </div>
           </a>
           <ul class="footer__menu">
-            <li class="footer__item">
-              <a href="#" class="footer__link" id="requisites">
-                Реквизиты
+            <p id="show_users" onclick="window.location.href='users.html'">Вce пользователи</p>
+            <li class="footer__item" id="questions">
+              <a href="questions.html" class="footer__link" id="requisites">
+                Вопросы
+              </a>
+            </li>
+            <li class="footer__item" id="privacy_li">
+              <a href="privacy.html" class="footer__link" id="privacy">
+                Политика конфиденциальности
               </a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link" id="privacy">
-                Политика конфиденциальности
-              </a>
+              <p class="footer__link" id="reset">
+                Сбросить настройки
+              </p>
             </li>
             <li class="footer__item">
               <div class="footer__messengers-block">
@@ -89,6 +96,6 @@
         </div>
       </footer>
 
-    <script src="/users.js"></script>
+    <script src="users.js"></script>
 </body>
 </html>
