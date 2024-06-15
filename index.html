@@ -32,6 +32,7 @@
         <div class="logo__title">Soft Clean</div>
         <div class="logo__subtitle" id="softCleanLogo">Бережная уборка помещений СПБ</div>
       </div>
+      
     <div class="header__phone-block-wrapper">
       <div class="header__phone-block">
         <a href="tel:+78007006050" class="header__phone">8-800-700-60-50</a>
@@ -53,12 +54,44 @@
         </a>
       </div>
     </div>
-    <button id="themebutton" onclick="toggleTheme()">тема</button>
-    <button id="langbutton" onclick="toggleLanguage()">рус</button>
+    <button id="themebutton" class="buttontheme" onclick="toggleTheme()">тема</button>
+    <button id="langbutton" class="buttonlang" onclick="toggleLanguage()">рус</button>
     <p id="account"></p>
     <button class="header__button button" id="header__button button">Авторизация</button>
     <button class="header__button1 button" id="header__button1 button">Выйти</button>
+    <img class="burger" id="burgerID" src="/burger.png" alt="aa">
   </div>
+    <!-- dfs -->
+    <div class="header__burger-menu">
+      <div class="header__burger-menu-content">
+        <div class="header__phone-block-wrapper1">
+          <div class="header__phone-block">
+            <a href="tel:+78007006050" class="header__phone">8-800-700-60-50</a>
+            <div class="header__working-hours" id="Mon-Sun">
+              Пн-Вс: 9:00 - 21:00
+            </div>
+          </div>
+        </div>
+        <div class="header__messengers1">
+          <div class="header__messengers-text" id="header__messengers-text">
+            Быстрая связь с нами в мессенджерах:
+          </div>
+          <div class="header__messengers-links">
+            <a href="#" class="header__messenger-link">
+              <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="header__messenger-icon">
+            </a>
+            <a href="#" class="header__messenger-link">
+              <img src="./img/common/whatsup-icon.svg" alt="whatsup icon" class="header__messenger-icon">
+            </a>
+          </div>
+        </div>
+        <button id="themebutton" class="buttontheme1" onclick="toggleTheme()">тема</button>
+        <button id="langbutton" class="buttonlang1" onclick="toggleLanguage()">рус</button>
+        <p id="account"></p>
+        <button class="header__button11 button" id="header__button button">Авторизация</button>
+        <button class="header__button12  button" id="header__button1 button">Выйти</button>
+      </div>
+    </div>
 </header>
     <main class="main">
       

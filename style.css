@@ -11,6 +11,10 @@
  *
  * Released on: February 5, 2024
  */
+ .abb{
+  display: flex;
+  gap:40px;
+ }
  .Account_menu{
   display: none;
   }
@@ -4190,7 +4194,7 @@ body.dark .our-works__swiper-slide{
 }
 #themebutton{
   border-radius: 20px;
-  border: 1px solid #43aaff;;
+  border: 1px solid #43aaff;
   width: 5%;
   margin-right: 2em;
 }
@@ -4206,4 +4210,79 @@ body.dark .our-works__swiper-slide{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.header__burger-menu {
+   display: none;/* Скрыть меню по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-color: rgb(189, 189, 189);
+  z-index: 15;
+}
+
+.header__burger-menu-content {
+  padding: 20px;
+}
+.burger{
+  z-index: 16;
+  display: none;
+}
+@media (max-width: 800px){
+  .burger{
+    display: block;
+  }
+  .header__phone-block-wrapper{
+    display: none;
+  }
+  .header__messengers{
+    display: none;
+  }
+  .intro__container{
+    padding-top: 2rem;
+  }
+  .buttontheme{
+    display: none;
+  }
+  .buttonlang{
+    display: none;
+  }
+  #account{
+    display: none;
+  }
+  .header__button{
+    display: none;
+  }
+  .header__button1{
+    display: none;
+  }
+  .buttonlang1{
+    display: block;
+  }
+  .buttontheme1{
+    display: block;
+  }
+  #langbutton{
+    width: 17%;
+  }
+  .header__button12{
+    display: none;
+  }
+  #themebutton{
+    width: 20%;
+  }
+}
+.btn123{
+  display: block;
+}
+.header__burger-menu.open{
+  display: block;
+  margin-left: 70%;
+}
+.header__burger-menu-content{
+  margin-top: 22%;
+display: flex;
+flex-direction: column;
+gap: 20px;
 }
