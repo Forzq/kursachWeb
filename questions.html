@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <header>
+    <div class="header__container">
+      <a href="#" class="header__logo logo">
+        <div onclick="window.location.href='index.html'" class="logo__img-wrapper">
+          <img src="./img/common/logo.svg" alt="logo" class="logo__img">
+        </div>
+        <div class="logo__text">
+          <div class="logo__title">Soft Clean</div>
+          <div class="logo__subtitle" id="softCleanLogo">Бережная уборка помещений СПБ</div>
+        </div>
+      <div class="header__phone-block-wrapper">
+        <div class="header__phone-block">
+          <a href="tel:+78007006050" class="header__phone">8-800-700-60-50</a>
+          <div class="header__working-hours" id="Mon-Sun">
+            Пн-Вс: 9:00 - 21:00
+          </div>
+        </div>
+      </div>
+      <div class="header__messengers">
+        <div class="header__messengers-text" id="header__messengers-text">
+          Быстрая связь с нами в мессенджерах:
+        </div>
+        <div class="header__messengers-links">
+          <a href="#" class="header__messenger-link">
+            <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="header__messenger-icon">
+          </a>
+          <a href="#" class="header__messenger-link">
+            <img src="./img/common/whatsup-icon.svg" alt="whatsup icon" class="header__messenger-icon">
+          </a>
+        </div>
+      </div>
+      <button id="themebutton" onclick="toggleTheme()">тема</button>
+      <button id="langbutton" onclick="toggleLanguage()">рус</button>
+      <p id="account"></p>
+      <button style="display: none;" class="header__button button" id="header__button button">Авторизация</button>
+    </div>
+  </header>
+      <main>
+        <section class="faq">
+            <div class="faq__container">
+              <h2 class="faq__heading heading2" id="faq__heading">
+                Часто задаваемые вопросы
+              </h2>
+              <div class="faq__items">
+                <div class="faq__item">
+                  <div class="faq__question" id="faq__question">
+                    Что нужно, чтобы подготовиться к уборке?
+                  </div>
+                  <div class="faq__answer _hidden" id="faq__answer">
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Заглавных языкового,
+                    живет лучше реторический рукопись снова текстов рыбного страну?
+                  </div>
+                  <div class="faq__circle" id="faq__circle"></div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__question" id="faq__question1">
+                    Могу ли я быть дома во время уборки?
+                  </div>
+                  <div class="faq__answer _hidden" id="faq__answer1">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Агентство, дал продолжил
+                    скатился инициал большой алфавит власти необходимыми эта до если, текстов путь языком от всех меня буквенных
+                    букв всеми!
+                  </div>
+                  <div class="faq__circle" id="faq__circle1"></div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__question" id="faq__question2">
+                    Сколько времени длится уборка?
+                  </div>
+                  <div class="faq__answer _hidden" id="faq__answer2">
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ее, путь. Там, прямо
+                    напоивший!
+                  </div>
+                  <div class="faq__circle" id="faq__circle2"></div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__question" id="faq__question3">
+                    За сколько дней до приезда клинеров необходимо сделать заказ?
+                  </div>
+                  <div class="faq__answer _hidden" id="faq__answer3">
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своего составитель вдали,
+                    текстами, алфавит если напоивший осталось оксмокс свое океана, своих маленький страна моей.
+                  </div>
+                  <div class="faq__circle" id="faq__circle3"></div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__question" id="faq__question4">
+                    Какие моющие средства вы используете?
+                  </div>
+                  <div class="faq__answer _hidden" id="faq__answer4">
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вопроса своего эта,
+                    собрал безорфографичный толку, агентство до заманивший деревни вершину, пор его одна рекламных рукопись? Раз
+                    деревни своего дорогу даль жаренные дороге ручеек продолжил залетают ему снова, букв скатился.
+                  </div>
+                  <div class="faq__circle" id="faq__circle4"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <a href="#" class="footer__logo logo">
+            <div class="logo__img-wrapper">
+              <img src="./img/common/logo.svg" alt="logo" class="logo__img">
+            </div>
+            <div class="logo__text">
+              <div class="logo__title">Soft Clean</div>
+              <div class="logo__subtitle" id="softCleanLogo1">Бережная уборка помещений СПБ </div>
+            </div>
+          </a>
+          <ul class="footer__menu">
+            <p id="show_users" onclick="window.location.href='users.html'">Вce пользователи</p>
+            <li class="footer__item" id="questions">
+              <a href="questions.html" class="footer__link" id="requisites">
+                Вопросы
+              </a>
+            </li>
+            <li class="footer__item" id="privacy_li">
+              <a href="privacy.html" class="footer__link" id="privacy">
+                Политика конфиденциальности
+              </a>
+            </li>
+            <li class="footer__item">
+              <p class="footer__link" id="reset">
+                Сбросить настройки
+              </p>
+            </li>
+            <li class="footer__item">
+              <div class="footer__messengers-block">
+                <div class="footer__messengers-text" id="footer__messengers-text">
+                  Быстрая связь:
+                </div>
+                <div class="footer__messenger-links">
+                  <a href="#" class="footer__messenger-link">
+                    <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="footer__messenger-icon">
+                  </a>
+                  <a href="#" class="footer__messenger-link">
+                    <img src="./img/common/whatsup-icon.svg" alt="whatsup icon" class="footer__messenger-icon">
+                  </a>
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </footer>
+      <script src="questions.js"></script>
+</body>
+</html>

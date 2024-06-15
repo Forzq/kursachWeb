@@ -1,0 +1,29 @@
+[
+    {
+        "email":"pupupu63@gmail.com",
+        "FirstName":"Anrey",
+        "LastName":"Jonson",
+        "FatherName":"Yurevich",
+        "NickName":"Anreal228",
+        "PhoneNumber":"",
+        "password":"12345"
+    },
+    {
+        "email":"himanru3@gmail.com",
+        "FirstName":"Alex",
+        "LastName":"Sharoiko",
+        "FatherName":"Vyacheslavovich",
+        "NickName":"eKO",
+        "PhoneNumber":"+375445526040",
+        "password":"Mog1_8000"
+    },
+    {
+        "email":"Admin@gmail.com",
+        "FirstName":"Admin",
+        "LastName":"Admin",
+        "FatherName":"Admin",
+        "NickName":"Admin",
+        "PhoneNumber":"+375445526040",
+        "password":"Admin"
+    }
+]
