@@ -4221,7 +4221,32 @@ body.dark .our-works__swiper-slide{
   background-color: rgb(189, 189, 189);
   z-index: 15;
 }
+.btn123{
+  display: block;
+}
+.header__burger-menu.open{
+  display: block;
+  margin-left: 70%;
+}
+.header__burger-menu-content{
+margin-top: 22%;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
 
+@media (max-width:550px){
+  .header__burger-menu{
+    width: 50%;
+  }
+  .header__burger-menu.open{
+    display: block;
+    margin-left: 50%;
+  }
+  .header__burger-menu-content{
+    margin-top: 30%;
+  }
+}
 .header__burger-menu-content {
   padding: 20px;
 }
@@ -4272,17 +4297,4 @@ body.dark .our-works__swiper-slide{
   #themebutton{
     width: 20%;
   }
-}
-.btn123{
-  display: block;
-}
-.header__burger-menu.open{
-  display: block;
-  margin-left: 70%;
-}
-.header__burger-menu-content{
-  margin-top: 22%;
-display: flex;
-flex-direction: column;
-gap: 20px;
 }
